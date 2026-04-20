@@ -1,17 +1,33 @@
-Seja bem-vindo ao VideoCompressor
+🎬 VideoCompressor
+O VideoCompressor é uma ferramenta simples e eficiente desenvolvida em Python para reduzir o tamanho de arquivos de vídeo. Ele calcula automaticamente o bitrate ideal para comprimir o vídeo e atingir um tamanho alvo específico (em MB) definido por você, buscando manter a melhor qualidade visual e de áudio possível.
 
-Essa é uma ferramenta projetada em Python para conseguir diminuir
-o tamanho dos arquivos de vídeo.
+🚀 Pré-requisitos
+Certifique-se de ter o Python instalado em sua máquina (recomenda-se a versão 3.12 ou superior).
 
-Para utilizar a ferramenta, é necessário utilizar a biblioteva MoviePy
-para instalar a biblioteca no seu computador, digite no terminal:
+O processamento e a conversão do vídeo são feitos através da biblioteca moviepy.
 
-Bash:
+🛠️ Instalação
+Para baixar as dependências necessárias, abra o seu terminal na pasta do projeto e execute o comando abaixo:
 
-*pip install moviepy*
+Bash
+pip install moviepy
+⚙️ Como Configurar
+Antes de rodar a ferramenta, você precisa informar qual vídeo deseja comprimir e qual será o tamanho final.
 
-Em seguida rode o arquivo Python em seu computador
+Abra o arquivo videocompressor.py e altere as variáveis no final do código, na seção de parâmetros:
 
-Bash:
+Python
+# ==========================================
+# PARÂMETROS DE EXECUÇÃO
+# ==========================================
+ARQUIVO_ORIGINAL = "meu_video.mp4"       # Insira o nome do seu vídeo original
+ARQUIVO_NOVO = "meu_video_leve.mp4"      # Defina o nome do novo vídeo comprimido
+TAMANHO_DESEJADO = 15                    # Defina o tamanho máximo desejado em MB
+Aviso: O arquivo de vídeo original deve estar na mesma pasta que o script Python para ser lido corretamente.
 
-*python videocompressor.py*
+▶️ Como Usar
+Com as dependências instaladas e o arquivo configurado, basta executar o script no terminal:
+
+Bash
+python videocompressor.py
+O terminal exibirá uma barra de progresso durante a compressão e, ao final, mostrará o tamanho exato do novo arquivo gerado.

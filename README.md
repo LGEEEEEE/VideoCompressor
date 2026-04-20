@@ -20,9 +20,9 @@ Antes de rodar a ferramenta, você precisa informar qual vídeo deseja comprimir
 Abra o arquivo videocompressor.py e altere as variáveis no final do código, na seção de parâmetros:
 
 Python
-# ==========================================
+
 # PARÂMETROS DE EXECUÇÃO
-# ==========================================
+
 ARQUIVO_ORIGINAL = "meu_video.mp4"       # Insira o nome do seu vídeo original
 ARQUIVO_NOVO = "meu_video_leve.mp4"      # Defina o nome do novo vídeo comprimido
 TAMANHO_DESEJADO = 15                    # Defina o tamanho máximo desejado em MB
